@@ -20,12 +20,12 @@ model User {
 
   firstName String?
   lastName String? 
-  bookmarks Bootmark[]
+  bookmarks Bookmark[]
   //@@map("users") // give  a name for the table
 
 }
 
-model Bootmark {
+model Bookmark {
   id Int @id @default(autoincrement())
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
